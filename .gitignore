@@ -1,0 +1,7 @@
+# DuckDB hasil pipeline (di-generate ulang dari notebook)
+db/*.duckdb
+db/*.duckdb.wal
+
+.ipynb_checkpoints/
+__pycache__/
+.venv/
