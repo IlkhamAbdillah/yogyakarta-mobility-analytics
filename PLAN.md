@@ -195,8 +195,8 @@ Section notebook:
 - [x] Revisi profiling: hapus `SUM(n_maids)`, tambah coverage per kapanewon
 - [x] Transform: fitur waktu, flag holiday/anomali, `maids_share`, `flow_scope`, `visitor_share_dest`
 - [x] Simpan hasil transform ke `staging.*_clean`
-- [ ] Buat `dw.dim_kapanewon`, `dim_date`, `dim_hour`, `dim_month`
-- [ ] Buat `dw.fact_hourly_presence`, `dw.fact_monthly_od`
+- [x] Buat `dw.dim_kapanewon`, `dim_date`, `dim_hour`, `dim_month`
+- [x] Buat `dw.fact_hourly_presence`, `dw.fact_monthly_od`
 - [ ] Jalankan QC → semua PASS
 - [ ] Analitik A1–A7 + simpan PNG ke `figures/`
 - [ ] Tulis kesimpulan + keterbatasan (devices ≠ people, suppression, bias sampel, OD Mar–Apr)

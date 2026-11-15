@@ -4,7 +4,7 @@ Proyek kelompok mata kuliah Rekayasa Data (Post-UTS): **Data Pipeline (ETL) + Da
 
 ## Struktur
 
-- `main.ipynb`: notebook utama, satu-satunya kode pipeline. Section: 0 Setup, 1 Extract → staging raw, 2 Profiling, 3 Transform → staging clean, 4 Build DW (belum), lalu QC, Analytics, Visualisasi (belum).
+- `main.ipynb`: notebook utama, satu-satunya kode pipeline. Section: 0 Setup, 1 Extract → staging raw, 2 Profiling, 3 Transform → staging clean, 4 Build DW (dimensi + fakta, PK di dimensi, tanpa FK constraint karena memblokir `CREATE OR REPLACE`), lalu QC, Analytics, Visualisasi (belum).
 - `data/`: CSV sumber dari Zenodo (JogjaPulse, DOI 10.5281/zenodo.23157460). Jangan diubah; perlakukan sebagai read-only.
 - `db/mobility.duckdb`: output pipeline, di-`.gitignore`, selalu bisa dibuat ulang dengan menjalankan notebook dari awal.
 - `PLAN.md`: rencana & checklist progres. Centang item ketika selesai.
