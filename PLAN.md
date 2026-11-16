@@ -197,7 +197,7 @@ Section notebook:
 - [x] Simpan hasil transform ke `staging.*_clean`
 - [x] Buat `dw.dim_kapanewon`, `dim_date`, `dim_hour`, `dim_month`
 - [x] Buat `dw.fact_hourly_presence`, `dw.fact_monthly_od`
-- [ ] Jalankan QC → semua PASS
+- [x] Jalankan QC → semua PASS
 - [ ] Analitik A1–A7 + simpan PNG ke `figures/`
 - [ ] Tulis kesimpulan + keterbatasan (devices ≠ people, suppression, bias sampel, OD Mar–Apr)
 - [ ] README + diagram skema + `requirements.txt`
