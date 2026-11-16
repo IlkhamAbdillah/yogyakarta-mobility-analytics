@@ -181,7 +181,7 @@ Ringkasan temuan dari analisis data cube (A1–A7) di [main.ipynb](main.ipynb):
 
 ## Anggota kelompok
 
-Adnan, Aston, Muhammad Ilkham Abdillah, Juan, Natanael Sebastian Simanjuntak, Rafif Raihan Bahrul Alam, Rakan Hendian Ramadhan, Rian.
+Adnan Abdul Majid, Aston Hugo, Muhammad Ilkham Abdillah, Juan, Natanael Sebastian Simanjuntak, Rafif Raihan Bahrul Alam, Rakan Hendian Ramadhan, Rian Prasetya Munaji.
 
 ## Sitasi dataset
 
