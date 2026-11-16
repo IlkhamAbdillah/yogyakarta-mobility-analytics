@@ -6,7 +6,16 @@ Proyek kelompok mata kuliah Rekayasa Data (Post-UTS): **data pipeline (ETL) + da
 
 > Di mana pusat aktivitas siang hari di DIY, dari mana pengunjungnya berasal, dan bagaimana pola hariannya?
 
-Rencana lengkap (desain skema, daftar QC, analisis yang direncanakan) ada di [PLAN.md](PLAN.md).
+## Anggota Kelompok:
+
+*   Adnan Abdul Majid (24/544058/TK/60471)
+*   Aston Hugo (24/538303/TK/59700)
+*   Muhammad Ilkham Abdillah (24/537977/TK/59653)
+*   Juan Christopher Reinaldo Sipayung (24/544528/TK/60526)
+*   Natanael Sebastian Simanjuntak (24/542676/TK/60273)
+*   Rafif Raihan Bahrul Alam (24/534432/TK/59237)
+*   Rakan Hendian Ramadhan (24/540158/TK/59909)
+*   Rian Prasetya Munaji (24/545573/TK/60702)
 
 ## Dataset
 
@@ -178,10 +187,6 @@ Ringkasan temuan dari analisis data cube (A1–A7) di [main.ipynb](main.ipynb):
 - **Ukuran sampel berubah antar waktu:** Penurunan tajam Des → Apr adalah perubahan komposisi sampel, bukan perubahan mobilitas; angka mentah tidak bisa dibandingkan langsung.
 - **Kualitas OD Mar–Apr 2022 rendah (`reduced_quality`):** Tetap disimpan di DW, tetapi analisis kuantitatif OD dibatasi pada Des 2021 – Feb 2022.
 - **Bias ukuran asal pada OD:** Dominasi Sleman sebagai asal pengunjung sebagian mencerminkan proporsi sampel device di Sleman yang memang terbesar (±45% share DIY).
-
-## Anggota kelompok
-
-Adnan Abdul Majid, Aston Hugo, Muhammad Ilkham Abdillah, Juan, Natanael Sebastian Simanjuntak, Rafif Raihan Bahrul Alam, Rakan Hendian Ramadhan, Rian Prasetya Munaji.
 
 ## Sitasi dataset
 
