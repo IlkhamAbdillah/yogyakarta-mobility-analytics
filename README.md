@@ -159,16 +159,25 @@ Sel setup pertama mendeteksi Colab, meng-*clone* repo dari GitHub, dan meng-inst
 - [x] Build data warehouse (dimensi dan fakta)
 - [x] Quality check
 - [x] Analitik dan visualisasi
-- [ ] Kesimpulan dan keterbatasan
+- [x] Kesimpulan dan keterbatasan
 
-Insight utama akan ditambahkan di sini setelah tahap analitik selesai.
+## Kesimpulan & Insight Utama
+
+Ringkasan temuan dari analisis data cube (A1–A7) di [main.ipynb](main.ipynb):
+
+- **Pusat tarikan & konsentrasi device ([A3](figures/A3_heatmap_urban.png), [A6](figures/A6_top_tujuan.png)):** **Depok (Sleman)** menarik pengunjung luar terbanyak (±9,2 rb device/bulan pada Des 2021 – Feb 2022), diikuti Banguntapan (±6,1 rb), Ngaglik (±5,9 rb), dan Gamping (±5,5 rb). Enam dari 10 tujuan teratas berada di Sleman, dua di Bantul, dan dua di Kota Yogyakarta. Di kawasan urban, Depok (±6,7%–9,5% share) dan Ngaglik stabil tinggi sepanjang hari.
+- **Pola harian & rasio siang vs dini hari ([A1](figures/A1_pola_harian.png), [A2](figures/A2_rasio_siang_malam.png)):** Siklus 24 jam hari kerja dan akhir pekan berbentuk serupa. Dari 71 kapanewon ber-coverage ≥ 50%, rasio share siang (10–14) vs dini hari (00–05) memiliki median ±1,03 (rentang 0,28× di Gondomanan hingga 1,46× di Playen). Rasio siang tertinggi justru berada di wilayah rural Gunungkidul dan Kulon Progo, sedangkan inti kota mencatat rasio lebih rendah karena tingginya share dini hari (Gondomanan melonjak ke ±18,8% pada pukul 02.00)—yang juga dipengaruhi efek penyebut *zero-sum* ketika slot rural banyak disuppress.
+- **Asal pengunjung & interaksi wilayah ([A5](figures/A5_matriks_od.png), [A6](figures/A6_asal_pengunjung.png)):** Pengunjung antar-kapanewon paling banyak berasal dari kab/kota sendiri (31,4%–63,7%, tertinggi Sleman 63,7%). **Sleman** menjadi asal luar terbesar bagi seluruh kab/kota lain (37,2% ke Kota Yogyakarta, 34,6% Bantul, 32,3% Kulon Progo, 30,4% Gunungkidul), diikuti Bantul ke Kota Yogyakarta (27,0%). Aliran level kapanewon terkonsentrasi di koridor bertetangga Sleman–Kota–Bantul.
+- **Sensitivitas sampel & periode event ([A4](figures/A4_tren_harian.png), [A7](figures/A7_event.png)):** Rata-rata device terpublikasi per jam turun dari ±8,7 rb (Des) menjadi ±1,0 rb (Apr), dengan penurunan tajam sekitar 1 Jan, 16 Feb, dan anomali 8 Mar 2022 (±0,65 rb/jam), sehingga perbandingan antar waktu wajib memakai share. Pada Malam Tahun Baru (31 Des) dan Libur 1 Jan, tidak ada kenaikan share yang konsisten di kapanewon wisata (Kraton 0,84×/0,93× dan Gedongtengen 0,34×/0,61× justru di bawah hari biasa).
 
 ## Keterbatasan data
 
-- Yang dihitung adalah device, bukan orang.
-- Slot dengan kurang dari 5 device tidak dipublikasikan, sehingga wilayah rural (terutama Gunungkidul) punya banyak slot kosong.
-- Ukuran sampel berubah antar waktu, jadi angka mentah tidak bisa dibandingkan langsung.
-- Data OD Mar–Apr 2022 berkualitas rendah.
+- **Device ≠ orang:** Yang dihitung adalah *device-presence*, bukan individu unik atau sensus penduduk.
+- **Privacy suppression (`< 5` device):** Slot dengan kurang dari 5 device tidak dipublikasikan (bukan nol). Tujuh kapanewon di Gunungkidul punya coverage `< 50%`, dan hilangnya slot rural di dini hari memperbesar share wilayah urban pada penyebut.
+- **Share bersifat *zero-sum*:** Kenaikan `maids_share` di satu kapanewon otomatis menekan share wilayah lain pada jam yang sama.
+- **Ukuran sampel berubah antar waktu:** Penurunan tajam Des → Apr adalah perubahan komposisi sampel, bukan perubahan mobilitas; angka mentah tidak bisa dibandingkan langsung.
+- **Kualitas OD Mar–Apr 2022 rendah (`reduced_quality`):** Tetap disimpan di DW, tetapi analisis kuantitatif OD dibatasi pada Des 2021 – Feb 2022.
+- **Bias ukuran asal pada OD:** Dominasi Sleman sebagai asal pengunjung sebagian mencerminkan proporsi sampel device di Sleman yang memang terbesar (±45% share DIY).
 
 ## Anggota kelompok
 
