@@ -158,7 +158,7 @@ Sel setup pertama mendeteksi Colab, meng-*clone* repo dari GitHub, dan meng-inst
 - [x] Extract, staging raw, profiling, transform, staging clean
 - [x] Build data warehouse (dimensi dan fakta)
 - [x] Quality check
-- [ ] Analitik dan visualisasi
+- [x] Analitik dan visualisasi
 - [ ] Kesimpulan dan keterbatasan
 
 Insight utama akan ditambahkan di sini setelah tahap analitik selesai.

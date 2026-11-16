@@ -198,7 +198,7 @@ Section notebook:
 - [x] Buat `dw.dim_kapanewon`, `dim_date`, `dim_hour`, `dim_month`
 - [x] Buat `dw.fact_hourly_presence`, `dw.fact_monthly_od`
 - [x] Jalankan QC → semua PASS
-- [ ] Analitik A1–A7 + simpan PNG ke `figures/`
+- [x] Analitik A1–A7 + simpan PNG ke `figures/`
 - [ ] Tulis kesimpulan + keterbatasan (devices ≠ people, suppression, bias sampel, OD Mar–Apr)
 - [ ] README + diagram skema + `requirements.txt`
 - [ ] `git pull --allow-unrelated-histories` lalu push ke GitHub
